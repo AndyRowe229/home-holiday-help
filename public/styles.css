@@ -1,0 +1,218 @@
+/* Home Holiday Help — base styles */
+
+:root {
+  --baby-blue: #A9D8F0;
+  --baby-blue-soft: #DDF0FB;
+  --butter-yellow: #F7DE8C;
+  --butter-yellow-soft: #FCF3D9;
+  --coral-pink: #F3A6A0;
+  --coral-pink-soft: #FBE1DF;
+  --ink: #4A3F35;
+  --ink-soft: #6B5E52;
+  --white: #FFFFFF;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: var(--ink);
+  background: var(--butter-yellow-soft);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+
+.site-header {
+  background: var(--baby-blue);
+  border-bottom: 4px solid var(--white);
+}
+
+.header-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 24px 8px;
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: 0.5px;
+}
+
+.brand-text p {
+  margin: 6px 0 0;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  max-width: 40ch;
+}
+
+.site-logo {
+  width: clamp(84px, 12vw, 140px);
+  height: auto;
+  flex-shrink: 0;
+}
+
+nav.site-nav {
+  padding: 0 24px 18px;
+}
+
+nav.site-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+nav.site-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--white);
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+nav.site-nav a:hover {
+  background: var(--butter-yellow-soft);
+}
+
+/* Hero / traits */
+
+.traits {
+  padding: 36px 24px 8px;
+  text-align: center;
+}
+
+.traits h2 {
+  font-size: 1.4rem;
+  margin: 0 0 16px;
+}
+
+.trait-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.trait-list li {
+  background: var(--white);
+  border: 2px solid var(--coral-pink);
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Services */
+
+.services {
+  padding: 40px 24px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 6px 18px rgba(74, 63, 53, 0.08);
+}
+
+.service-card.pet {
+  border-top: 8px solid var(--baby-blue);
+}
+
+.service-card.child {
+  border-top: 8px solid var(--coral-pink);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.service-card p {
+  color: var(--ink-soft);
+  margin-bottom: 0;
+}
+
+/* About */
+
+.about {
+  background: var(--coral-pink-soft);
+  padding: 48px 24px;
+}
+
+.about-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 1.9rem;
+  margin-top: 0;
+}
+
+.about p {
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+}
+
+/* Footer */
+
+.site-footer {
+  background: var(--baby-blue);
+  padding: 28px 24px;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+
+@media (max-width: 640px) {
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+}
