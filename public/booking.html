@@ -6,6 +6,9 @@
 <title>Booking — Home Holiday Help</title>
 <meta name="description" content="Check sitter availability and find out how to book Home Holiday Help.">
 <link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +17,7 @@
   <div class="header-inner">
     <div class="brand-text">
       <a href="index.html"><h1>Home Holiday Help</h1></a>
-      <p>Made with heart — friendly, dependable pet and child sitting, right in your neighbourhood.</p>
+      <p>Made with heart — friendly, dependable pet and child sitting.</p>
     </div>
     <img class="site-logo" src="images/logo.png" alt="Home Holiday Help logo">
   </div>
@@ -45,95 +48,97 @@
 <div class="booking-section">
 
   <h2>Availability by School Holiday</h2>
-  <p>A quick view of which of us are free across the year. Get in touch as early as you can to lock in your dates.</p>
-  <div class="availability-table-wrap">
-    <table class="availability">
-      <thead>
-        <tr>
-          <th>Sitter</th>
-          <th>Half Term</th>
-          <th>Christmas</th>
-          <th>Easter</th>
-          <th>Summer</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Sienna</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-        </tr>
-        <tr>
-          <td>Lyla</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-        </tr>
-        <tr>
-          <td>Sophie</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-        </tr>
-      </tbody>
-    </table>
+  <p class="section-note">A quick view of which of us are free across the year. Get in touch as early as you can to lock in your dates.</p>
+  <div class="availability-grid">
+
+    <div class="availability-card">
+      <h3>Sienna</h3>
+      <div class="day-pills">
+        <span class="day-pill available">Half Term</span>
+        <span class="day-pill available">Christmas</span>
+        <span class="day-pill available">Easter</span>
+        <span class="day-pill available">Summer</span>
+      </div>
+    </div>
+
+    <div class="availability-card">
+      <h3>Lyla</h3>
+      <div class="day-pills">
+        <span class="day-pill available">Half Term</span>
+        <span class="day-pill available">Christmas</span>
+        <span class="day-pill available">Easter</span>
+        <span class="day-pill available">Summer</span>
+      </div>
+    </div>
+
+    <div class="availability-card">
+      <h3>Sophie</h3>
+      <div class="day-pills">
+        <span class="day-pill">Half Term</span>
+        <span class="day-pill">Christmas</span>
+        <span class="day-pill">Easter</span>
+        <span class="day-pill">Summer</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="availability-legend">
+    <span><span class="legend-dot available"></span> Available</span>
+    <span><span class="legend-dot unavailable"></span> Not currently available</span>
   </div>
 
   <h2>Weekly Availability</h2>
-  <p>Our usual availability across a typical week — this can shift around school and other commitments, so please check with us for your exact dates.</p>
-  <div class="availability-table-wrap">
-    <table class="availability">
-      <thead>
-        <tr>
-          <th>Sitter</th>
-          <th>Mon</th>
-          <th>Tue</th>
-          <th>Wed</th>
-          <th>Thur</th>
-          <th>Fri</th>
-          <th>Sat</th>
-          <th>Sun</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Sienna</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td></td>
-          <td></td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-        </tr>
-        <tr>
-          <td>Lyla</td>
-          <td></td>
-          <td></td>
-          <td class="tick">&check;</td>
-          <td></td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-        </tr>
-        <tr>
-          <td>Sophie</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-          <td class="tick">&check;</td>
-        </tr>
-      </tbody>
-    </table>
+  <p class="section-note">Our usual availability across a typical week — this can shift around school and other commitments, so please check with us for your exact dates.</p>
+  <div class="availability-grid">
+
+    <div class="availability-card">
+      <h3>Sienna</h3>
+      <div class="day-pills">
+        <span class="day-pill available">Mon</span>
+        <span class="day-pill available">Tue</span>
+        <span class="day-pill">Wed</span>
+        <span class="day-pill">Thur</span>
+        <span class="day-pill available">Fri</span>
+        <span class="day-pill available">Sat</span>
+        <span class="day-pill">Sun</span>
+      </div>
+    </div>
+
+    <div class="availability-card">
+      <h3>Lyla</h3>
+      <div class="day-pills">
+        <span class="day-pill available">Mon</span>
+        <span class="day-pill">Tue</span>
+        <span class="day-pill">Wed</span>
+        <span class="day-pill">Thur</span>
+        <span class="day-pill">Fri</span>
+        <span class="day-pill available">Sat</span>
+        <span class="day-pill available">Sun</span>
+      </div>
+    </div>
+
+    <div class="availability-card">
+      <h3>Sophie</h3>
+      <div class="day-pills">
+        <span class="day-pill">Mon</span>
+        <span class="day-pill">Tue</span>
+        <span class="day-pill">Wed</span>
+        <span class="day-pill">Thur</span>
+        <span class="day-pill">Fri</span>
+        <span class="day-pill">Sat</span>
+        <span class="day-pill">Sun</span>
+      </div>
+    </div>
+
   </div>
-  <p style="color: var(--ink-soft); font-size: 0.92rem;">Have a question about how booking works? Take a look at our <a href="faqs.html">FAQs</a>.</p>
+
+  <div class="availability-legend">
+    <span><span class="legend-dot available"></span> Available</span>
+    <span><span class="legend-dot unavailable"></span> Not currently available</span>
+  </div>
+
+  <p style="text-align: center; color: var(--ink-soft); font-size: 1.1rem;">Have a question about how booking works? Take a look at our <a href="faqs.html">FAQs</a>.</p>
 </div>
 
 <section class="app-cta">
