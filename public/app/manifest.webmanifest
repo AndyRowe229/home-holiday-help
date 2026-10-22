@@ -1,0 +1,13 @@
+{
+  "name": "Home Holiday Help Bookings",
+  "short_name": "HH Help",
+  "description": "Book babysitting, dog sitting and dog walking with Home Holiday Help.",
+  "start_url": "/app/",
+  "scope": "/app/",
+  "display": "standalone",
+  "background_color": "#FCF3D9",
+  "theme_color": "#A9D8F0",
+  "icons": [
+    { "src": "/images/logo.png", "sizes": "any", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Home Holiday Help — Bookings</title>
+<meta name="description" content="Book babysitting, dog sitting and dog walking with Home Holiday Help, and see your booked sessions.">
+<meta name="theme-color" content="#A9D8F0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HH Help">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="../images/logo.png">
+<link rel="apple-touch-icon" href="../images/logo.png">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body class="app-body">
+
+<header class="app-header">
+  <a class="app-brand" href="../index.html">
+    <img src="../images/logo.png" alt="">
+    <span>Home Holiday Help</span>
+  </a>
+  <button type="button" class="app-signout" id="signout" hidden>Sign out</button>
+</header>
+
+<main class="app-main" id="app" aria-live="polite">
+  <p class="app-loading">Loading…</p>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
